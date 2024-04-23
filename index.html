@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>HTML Quiz for SMIT</h1>
+        <h2> Topic: HTML</h2>
+        <form id="studentDetailsForm" onsubmit="startQuiz(event)">
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" required><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" required><br>
+            <label for="section">Section:</label>
+            <input type="text" id="section" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+            <button type="submit">Start Quiz</button>
+        </form>
+
+        <div id="quiz" style="display: none;">
+            <form id="quizForm" onsubmit="submitQuiz(event)">
+                <h2>Question 1: What does HTML stand for?</h2>
+                <input type="radio" name="q1" value="a"> a) Hyper Text Markup Language<br>
+                <input type="radio" name="q1" value="b"> b) Hyperlinks and Text Markup Language<br>
+                <input type="radio" name="q1" value="c"> c) Home Tool Markup Language<br><br>
+
+                <h2>Question 2: Which element is used for creating a hyperlink?</h2>
+                <input type="radio" name="q2" value="a"> a) &lt;a&gt;<br>
+                <input type="radio" name="q2" value="b"> b) &lt;link&gt;<br>
+                <input type="radio" name="q2" value="c"> c) &lt;href&gt;<br><br>
+
+                <h2>Question 3: What is the correct HTML element for inserting a line break?</h2>
+                <input type="radio" name="q3" value="a"> a) &lt;br&gt;<br>
+                <input type="radio" name="q3" value="b"> b) &lt;break&gt;<br>
+                <input type="radio" name="q3" value="c"> c) &lt;linebreak&gt;<br><br>
+
+                <h2>Question 4: Which tag is used to define an unordered list?</h2>
+                <input type="radio" name="q4" value="a"> a) &lt;ul&gt;<br>
+                <input type="radio" name="q4" value="b"> b) &lt;ol&gt;<br>
+                <input type="radio" name="q4" value="c"> c) &lt;li&gt;<br><br>
+
+                <h2>Question 5: Which attribute is used to define inline styles in HTML?</h2>
+                <input type="radio" name="q5" value="a"> a) style<br>
+                <input type="radio" name="q5" value="b"> b) css<br>
+                <input type="radio" name="q5" value="c"> c) font<br><br>
+
+            
+
+                <button type="submit">Submit</button>
+                <button class="BTN"><a href="./result.html"> Show Results</a></button>
+            </form>
+        </div>
+
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

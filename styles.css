@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White background for container */
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Blue color for heading */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #28a745; /* Green color for labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"] {
+    margin-bottom: 10px;
+    border: 1px solid #007bff; /* Blue border for input fields */
+    border-radius: 5px;
+    padding: 8px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #17a2b8; /* Turquoise color for button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #138496; /* Darker turquoise color on hover */
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #dc3545; /* Red color for result text */
+}

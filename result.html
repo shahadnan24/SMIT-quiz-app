@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Result</h1>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Retrieve student details and quiz result from sessionStorage
+        const name = sessionStorage.getItem('name');
+        const email = sessionStorage.getItem('email');
+        const roll = sessionStorage.getItem('roll');
+        const batch = sessionStorage.getItem('batch');
+        const section = sessionStorage.getItem('section');
+        const score = sessionStorage.getItem('score');
+
+        // Display student details and quiz result
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Roll Number:</strong> ${roll}</p>
+            <p><strong>Batch:</strong> ${batch}</p>
+            <p><strong>Section:</strong> ${section}</p>
+            <p><strong>Score:</strong> ${score}/5</p>
+        `;
+    </script>
+</body>
+</html>
